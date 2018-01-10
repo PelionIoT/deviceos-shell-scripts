@@ -1,0 +1,2 @@
+#!/bin/bash
+LD_LIBRARY_PATH=/wigwag/system/lib /wigwag/system/bin/maestro -dump_meta_vars -config /wigwag/wwrelay-utils/maestro-conf/wwrelay-config.yaml

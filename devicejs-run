@@ -1,0 +1,3 @@
+#!/bin/bash
+
+/wigwag/devicejs-ng/bin/devicejs run --config=/wigwag/etc/devicejs/devicejs.conf "$@"

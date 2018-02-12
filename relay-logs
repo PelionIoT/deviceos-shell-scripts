@@ -1,4 +1,14 @@
 #!/bin/bash
 
-less -r /wigwag/log/devicejs.log
+if [ "$1" == "tail-grep" ]; then
+    shift
+    tail -f /wigwag/log/devicejs.log | grep "$@"
+else
+    if [ "$1" == "grep" ]; then
+        shift
+        cat /wigwag/log/devicejs.log | grep "$@" | less -r
+    else
+        less -r /wigwag/log/devicejs.log
+    fi
+fi
 
